@@ -3,18 +3,18 @@
             text-decoration: none;
         }
         .navbar{
-            background-color: rgb(204, 189, 219); font-family:  Calibri; padding-right: 20px; padding-left: 20px;
+            background-color: rgb(124, 24, 224); font-family:  Calibri; padding-right: 20px; padding-left: 20px;
         }
         .navdiv{
             display:flex; align-items: center; justify-content: space-between;
         }
         .logo a{
-            font-size: 90px; font-weight: 600; color:blue;
+            font-size: 90px; font-weight: 600; color:rgb(138, 210, 23);
         }
         li{
             list-style: none; display: inline-block;
         }
         li a{
-            color: blueviolet; font-size: 18px; font-weight: bold; margin-right: 25px;
+            color: rgb(217, 164, 17); font-size: 18px; font-weight: bold; margin-right: 25px;
         }
  
