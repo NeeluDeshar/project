@@ -42,11 +42,18 @@ ScrollReveal().reveal(".header_container .btn",{
 ScrollReveal().reveal(".room_card",{
     ...scrollRevealOption,
     interval:500,
-})
+});
 
 //feature container
 
 ScrollReveal().reveal(".feature_card",{
     ...scrollRevealOption,
     interval:500,
-})
+});
+
+//news container
+
+ScrollReveal().reveal(".news_card",{
+    ...scrollRevealOption,
+    interval:500,
+});
