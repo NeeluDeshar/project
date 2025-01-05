@@ -1,19 +1,25 @@
 const menuBtn = document.getElementById("menu-btn");
 const navLinks = document.getElementById("nav-links");
 const menuBtnIcon = document.getElementById("i");
-
-menuBtn.addEventListener("click",(e) => {
-    navLinks.classList.toggle("open");
-    const isOpen = navLinks.classList.contains("open")
-    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-
-});
+const seeMoreBtn = document.getElementById("see-more-btn");
+const content = document.getElementById("about_content");
 
 
-navLinks.addEventListener("click",(e) => {
-    navLinks.classList.remove("open");
-    menuBtnIcon.setAttribute("class","i-menu-line");
-});
+if (menuBtn && navLinks && menuBtnIcon) {
+    menuBtn.addEventListener("click", (e) => {
+        navLinks.classList.toggle("open");
+        const isOpen = navLinks.classList.contains("open");
+        menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+    });
+
+    navLinks.addEventListener("click", (e) => {
+        navLinks.classList.remove("open");
+        menuBtnIcon.setAttribute("class", "ri-menu-line");
+    });
+} else {
+    console.error(".");
+}
+
 
 const scrollRevealOption = {
     distance: "50px",
@@ -36,6 +42,16 @@ ScrollReveal().reveal(".header_container .btn",{
     ...scrollRevealOption,
     delay: 1000,
 });
+
+if (seeMoreBtn && content) {
+    seeMoreBtn.addEventListener("click", () => {
+        const isOpen = content.style.maxHeight === "none";
+        content.style.maxHeight = isOpen ? "150px" : "none"; 
+        seeMoreBtn.textContent = isOpen ? "See More" : "See Less";
+    });
+}
+
+
 
 //room container
 

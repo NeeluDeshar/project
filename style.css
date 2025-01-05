@@ -191,7 +191,25 @@ body{
     font-family: var(--header-font);
     color: var(--white);
 }
+.content {
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
 
+#see-more-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#see-more-btn:hover {
+    background-color: var(--text-light);
+}
 
 
 
@@ -267,9 +285,73 @@ body{
 }
 
 
-.about_content .section_description{
-    margin-bottom: 2rem;
+.about_content {
+    text-align: center; 
+    padding: 2rem; 
+    background-color: #f9f9f9; 
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); 
+    max-width: 800px; 
+    margin: 2rem auto; 
 }
+
+.about_content .section_subheader {
+    font-size: 1.2rem; 
+    color: #555; 
+    margin-bottom: 0.5rem; 
+    text-transform: uppercase; 
+    letter-spacing: 2px;
+}
+
+.about_content .section_header {
+    font-size: 2rem; 
+    color: #333; 
+    margin-bottom: 1rem; 
+}
+
+.about_content .section_description {
+    font-size: 1rem; 
+    color: #666; 
+    line-height: 1.6; 
+    margin-bottom: 1.5rem; 
+}
+
+.about_content .btn {
+    font-size: 1rem; 
+    padding: 0.75rem 1.5rem; 
+    background-color: var(--secondary-color); 
+    color: #fff;
+    border: none; 
+    border-radius: 5px; 
+    cursor: pointer; 
+    transition: background-color 0.3s ease; 
+}
+
+.about_content .btn:hover {
+    background-color: var(--secondary-color); 
+}
+
+.content {
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
+
+#see-more-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#see-more-btn:hover {
+    background-color: var(--text-light);
+}
+
+
+
 
 
 .room_container{
@@ -358,7 +440,25 @@ body{
     margin-bottom: 1rem;
     color: var(--white);
 }
+.content {
+    max-height: 150px;
+    overflow: hidden;
+    transition: max-height 0.3s ease;
+}
 
+#see-more-btn {
+    background-color: var(--secondary-color);
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+}
+
+#see-more-btn:hover {
+    background-color: var(--text-light);
+}
 .intro_video{
     max-width: 450px;
     margin: auto;
