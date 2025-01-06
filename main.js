@@ -5,20 +5,18 @@ const seeMoreBtn = document.getElementById("see-more-btn");
 const content = document.getElementById("about_content");
 
 
-if (menuBtn && navLinks && menuBtnIcon) {
-    menuBtn.addEventListener("click", (e) => {
-        navLinks.classList.toggle("open");
-        const isOpen = navLinks.classList.contains("open");
-        menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
-    });
-
-    navLinks.addEventListener("click", (e) => {
-        navLinks.classList.remove("open");
-        menuBtnIcon.setAttribute("class", "ri-menu-line");
-    });
-} else {
-    console.error(".");
-}
+menuBtn.addEventListener("click", (e) => {
+    navLinks.classList.toggle("open");
+  
+    const isOpen = navLinks.classList.contains("open");
+    menuBtnIcon.setAttribute("class", isOpen ? "ri-close-line" : "ri-menu-line");
+  });
+  
+  navLinks.addEventListener("click", (e) => {
+    navLinks.classList.remove("open");
+    menuBtnIcon.setAttribute("class", "ri-menu-line");
+  });
+  
 
 
 const scrollRevealOption = {
