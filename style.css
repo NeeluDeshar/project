@@ -744,6 +744,37 @@ body{
     color: var(--text-light);
 }
 
+.box {
+    border: 1px solid --text-light; /* Light gray border */
+    border-radius: 8px; /* Rounded corners */
+    padding: 30px; /* Space inside the box */
+    margin: 16px 0; /* Space around the box */
+    background-color: var(--primary-color); /* Light background color */
+}
+
+.box h5 {
+    margin: 0 0 8px; /* Space below the heading */
+    font-size: 18px; /* Font size for the heading */
+    color: var(--extra-light); /* Darker text color */
+    font-weight: bold; /* Bold heading */
+}
+
+.box p {
+    margin: 0; /* Remove default paragraph margin */
+    font-size: 16px; /* Font size for the text */
+    color: var(--text-light); /* Slightly lighter text color */
+}
+
+iframe {
+    width: 100%; /* Make the iframe responsive */
+    max-width: 900px; /* Limit the maximum width */
+    height: 350px; /* Set the height */
+    border: 0; /* Remove the default border */
+    border-radius: 8px; /* Match the box's rounded corners */
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+
 .footer_bar {
     padding: 1rem;
     font-size: 0.8rem;
